@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            h1{
+                color: red;
+            } 
+        </style>
+        <button type="button">Mute</button>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <nav>
+                <a href ="#home">Home</a> 
+                <a href="#projects">Projects</a>
+                <a href="#greenai">Green AI</a>
+            </nav>
+            <audio control loop autoplay>
+                
+                <source src="trap.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+        </header>
+        <main>
+            <section id="home">
+                <div class="center">
+                    <h1>Brandon Kao's Portfolio</h1>
+                    <svg height="130" width="1000">
+                        <rect x="0" y="0" width="100%" height="100%" fill="green" />
+                        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">welcome to my hippocampus</text>
+                        Sorry, your browser does not support inline SVG.
+                      </svg>
+                      
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="projects">
+                <ol>
+                    <li>
+                        <h2>Some Personal Projects</h2>
+                        <h3>chrome extension</h3>
+                        <iframe src="https://play.pokemonshowdown.com/teambuilder" title="pokemon showdown teambuilder"></iframe>
+                        <p>
+                            A google chrome extension made for <b> competitive </b> pokemon battles on the pokemon showdown website. It provides trainers with the latest meta sets of moves, abilities, items, and EV (Effort Value) spreads to makes teams <em>automatically</em>.
+                        </p>
+                        <strong>Under Maintenance!</strong>
+                        <picture>
+                            <source srcset="card.png" media="(orientation: portrait)" />
+                            <img src="poke.png" alt="Screenshot of the extention" />
+                        </picture>
+
+                        <details>
+                            <summary>Packages Used</summary>
+                            <code>
+                                npm install chart.js
+                            </code>
+                        </details>
+
+                    </li>
+                        <h3>TBD Project</h3>
+                        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+                        <script>
+                        var canvas = document.getElementById("myCanvas");
+                        var context = canvas.getContext("2d");
+                        context.font = "30px Arial";
+                        context.fillText("TBD", 50, 50);
+                        </script>
+                    <li>
+                        
+                    </li>
+                </ol>
+
+                
+                
+            </section>
+
+            <hr>
+
+            <section id="greenai">
+                <h2>Green AI</h2>
+                <aside>
+                    Sustainable AI
+                    <h3>Sustainable AI</h3>
+                    <pre>
+                        <video controls loop src="robot.mp4">video can not play</video>
+AI's green lantern,
+Sustainability's pattern,
+Nature's true concern.
+                    </pre>
+                    
+                    <a href="https://research.facebook.com/publications/sustainable-ai-environmental-implications-challenges-and-opportunities/">Click here to learn more</a>
+                </aside>
+                <p>Sustainability <b>can't</b> be like some sort of a moral sacrifice or political dilemma or a philanthropical cause. <span>It has to be a design challenge.</span> <br> <i>-Bjarke Ingels</i> </p>
+            
+                <figure></figure>
+                <figure>
+                    <img src="https://i.kinja-img.com/image/upload/c_fit,q_60,w_1315/72a4e21a60ca6c0fbcb4db3c9f7dedf4.jpg" alt="chart on AI energy use" style="width:100%">
+                    <figcaption>“The AI Index 2023 Annual Report,” AI Index Steering Committee, Institute for Human-Centered AI, Stanford University, Stanford, CA
+                    </figcaption>
+                  </figure>
+
+                  <table>
+                    <caption>categorizes the surveyed papers into: taxonomy category, input, technique, output, validation, model requirements, type of machine, and availability</caption>
+                    <thead>
+                        <colgroup>
+                            <col span="1" style="background-color: red;">
+                          </colgroup>
+                      <tr>
+                        <th>Technique</th>
+                        <th>ML Application</th>
+                        <th>Advantages</th>
+                        <th>Disadvantages</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>PMC</td>
+                        <td>Energy consumption analysis of any ML model</td>
+                        <td>No overhead. Application independent</td>
+                        <td>No per-processor results</td>
+                      </tr>
+                      <tr>
+                        <td>Simulation</td>
+                        <td>Analysis of algorithms behavior on ML specific hardware</td>
+                        <td>Detailed results</td>
+                        <td>Significant Overhead</td>
+                      </tr>
+                      <tr>
+                        <td>Instruction-level</td>
+                        <td>Energy consumption analysis of specific layers in a neural network</td>
+                        <td>Detailed breakdown of energy consumption</td>
+                        <td>Not easily available</td>
+                      </tr>
+                      <tr>
+                        <td>Architecture-level</td>
+                        <td>Improve programming hardware for ad-hoc ML applications</td>
+                        <td>Detailed view</td>
+                        <td>Usually not generalizable to different hardware platforms</td>
+                      </tr>
+                      <tr>
+                        <td>Real-time</td>
+                        <td>Streaming data and IoT</td>
+                        <td>Easily available</td>
+                        <td>Usually not detailed results</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+            </section>
+            <section id="feedback">
+                reason why this feedback form is important
+
+                <ul>
+                    <li>for me to improve my website</li>
+                    <li>please</li>
+                </ul>
+                <form>
+
+                    <fieldset>
+                        <legend>Contact:</legend>
+                        <label for="name">First name:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+
+                    <label for="ai">Your favorite AI:</label>
+                    <select  name="ai" id="ai">
+                      <optgroup label="LLM">
+                        <option value="l1">chatgpt</option>
+                        <option value="l2">illama</option>
+                        <option value="l3">claude</option>
+                      </optgroup>
+                      <optgroup label="Image Generators">
+                        <option value="i1">midjourny</option>
+                        <option value="i2">stable diffusion</option>
+                    </optgroup>
+                    <option value="i3">others</option>
+
+                    <label for="hope">How do you think that we can achieve sustainable AI:</label>
+                    <input list="scale" name="hope" id="hope">
+                    <datalist id="scale">
+                    <option value="by passing strict limitations">
+                    <option value="by educating the people on its hidden costs">
+                    <option value="by developing better technologies">
+                    </datalist>
+
+                    <textarea name="feedback" id="feedback_text" cols="30" rows="10"></textarea>
+                </form>
+            </section>
+        </main>
+        <footer>
+            built by Brandon Kao, 2023
+            <template>
+                <script src="" async defer></script>
+            </template>
+        </footer>
+
+        
+        
+    </body>
+</html>
