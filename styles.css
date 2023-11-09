@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+    --title-white: #fbfbfb;
+    --ear: #f4d2c6;
+    --background-grey: #dcdfe1;
+    --darker-grey: #dcdfe1;
+    --metal-grey: #9fa4b1;
+    --wide-grey: color(display-p3 .8 .8 .9);
+    --mix-ear-grey: color-mix(in lch, #f4d2c6, #dcdfe1);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+}
+picture img{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--background-grey, white);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px;
+}
+
+h2{
+    padding: 30px;
+    background-color: var(--mix-ear-grey, grey);
+}
+
+h1#banner{
+    font-size: 1.5rem;
+    letter-spacing: 9px;
+}
+
+h3 {
+    font-style: italic;
+}
+
+header {
+    background-color: var(--wide-grey, white);
+    padding: 30px;
+    width: 100vw;
+    position: fixed;
+}
+
+header > nav > a{
+    padding: 15px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+section > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+aside {
+    width: 50vw;
+    height: 70vh;
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--background-grey, grey);
+}
+
+text-box{
+    width: 50vw;
+    background-color: var(--ear, pink);
+    transition: all 0.3s;
+}
+
+text-box:hover text-box:has(+ h2){
+    width: 50vw;
+    background-color: var(--background-grey, grey);
+}
+
+#p1 :has(text-box:hover) + .text-box {
+    /* styles for the previous sibling */
+    background-color: black;
+}
+
+
+aside *{
+    text-align: center;    
+    transition: all 0.3s;
+}
+
+aside img{
+    width: 30%;
+    height: auto;
+    align-self: flex-end;
+    margin-bottom: 40px;
+}
+
+aside img:hover{
+    transform: rotate(20deg);
+}
+
+aside:hover + text-box{
+    color: grey;
+}
+
+
+aside:has(+ text-box:hover) {
+    color: grey;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+#greenai p{
+    font-size: 1.3rem;
+    line-height: 150%;
+    padding: 30px;
+}
+
+#p2{
+    background-color: white;
+    padding: 30px;
+}
+
+hr{
+    border: 1px solid black;
+    margin-top: 5px;
+}
+figure > img{
+    border: 6px inset grey;
+    width: 45em;
+    height: 30em;
+    object-fit: fill;
+
+}
+
+#chart{
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    border-collapse: collapse;
+    height: 70vh;
+    width: 80vw;
+    align-self: center;
+  }
+
+  caption {
+    text-align: left;
+    font-weight: bold;
+    padding: 20px;
+
+  }
+
+  th {
+    background-color: #0074D9;
+    color: #fff;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: var(--ear, pink);
+  }
+
+  colgroup {
+    width: 5%;
+  }
+
+#feedback{
+    padding: 10px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.change-letter-spacing {
+    animation: changeLetterSpacing 2s  infinite alternate;
+  }
+  
+  @keyframes changeLetterSpacing {
+    0% {
+      letter-spacing: 0;
+    }
+    100% {
+      letter-spacing: 10px;
+    }
+  }
+
+#submit{
+    width: 300px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    html, body {
+        overflow-x:hidden 
+    } 
+
+      
+    *{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+    }
+
+    text-box, #banner, h2, figure>img{
+        width: 100vw;
+    }
+
+  
+
+    header{
+        position: relative;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section, section > section {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    img{
+        width: 100dvw;
+        height: auto;
+        object-fit: contain !important;
+        border: none;
+
+    }
+
+    .change-letter-spacing {
+        animation: changeLetterSpacing 1s  infinite alternate;
+      }
+      
+      @keyframes changeLetterSpacing {
+        0% {
+          letter-spacing: 5;
+        }
+        100% {
+          letter-spacing: 10px;
+        }
+      }
+
+    #table, #feedback{
+        font-size: 0.7em;
+    }
+
+
+
+  }
